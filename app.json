@@ -10,7 +10,7 @@
   "env": {
     "PREFIX": {
       "description": "Set the prefix for bot commands. You can use multiple prefixes by separating them with commas. Example: '.', '#', '!'",
-      "value": ".",
+      "value": ",",
       "required": false
     },
     "AUTO_READ_MESSAGES": {
@@ -40,7 +40,7 @@
     },
     "AUTO_REACTION": {
       "description": "Automatically react to received messages. Set to 'on' to enable or 'off' to disable.",
-      "value": "off",
+      "value": "on",
       "required": false
     },
     "ANTI_DELETE": {
@@ -73,17 +73,17 @@
     },
     "SESSION_ID": {
       "description": "Place your unique LUCKY MD session ID here. This is required for the bot to function.",
-      "value": "",
+      "value": "eyJub2lzZUtleSI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiV05XTWRkQkxpL09mWWZnNHMvTWpNUGczQjR1Q2p1NHBrT3gva281azZHND0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiVE1OT1FNSTYxZ0Q1OUpsVXNUc0d4MTRvVzAyNDFxc2lZTnBRQ1lWMnNuOD0ifX0sInBhaXJpbmdFcGhlbWVyYWxLZXlQYWlyIjp7InByaXZhdGUiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJrUHRBMVg3cEppbmp6ZWZQR1lTdG5yWVFySjNNb3d1bng2UzRGRnlsODJBPSJ9LCJwdWJsaWMiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJISHI1Vm5ocHBnYURoZWNlMm54c2F2TEsyQUQ0S0NxT0lHSlk3eFBkVFFVPSJ9fSwic2lnbmVkSWRlbnRpdHlLZXkiOnsicHJpdmF0ZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6Ik1GUHppUmxhVmltdXd2Y01laVlEeE82VlV6SS9PRVMyZFVaVzRQRjZubVk9In0sInB1YmxpYyI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IndkdzkrSmlHaUlMeUNWVTIrZjdwYzZsL3BTY0J6YTRqN2VCMGE3NmpUbkU9In19LCJzaWduZWRQcmVLZXkiOnsia2V5UGFpciI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoid05rNisyeHdIbnZoWTBwYXhKNjJwMjdwajBjNit4TC8wSnJiQXZVS2lGaz0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiQnhxZG1qQWZkNmp1cHJiUkt3WFg0Q0NPaDVjU0djNEdtcm96Wk52c2lYND0ifX0sInNpZ25hdHVyZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6Imp6d3l3RjgvS3I2S21vRFF1VzNZR2Y5OE1JR1lHMy9lQ2lPaHgzVTlkT3BGOFlqRytWUUgwSXlkcEF1MWVmTko1NWZoQUFjR012VkhRa0Rta2tKZURnPT0ifSwia2V5SWQiOjF9LCJyZWdpc3RyYXRpb25JZCI6MTU0LCJhZHZTZWNyZXRLZXkiOiJiNDIxbFBZVFhGY1MwVWlHY09lMTh5SWxNSkhZRVc4WVluRUg5YVpVOWlvPSIsInByb2Nlc3NlZEhpc3RvcnlNZXNzYWdlcyI6W10sIm5leHRQcmVLZXlJZCI6MzEsImZpcnN0VW51cGxvYWRlZFByZUtleUlkIjozMSwiYWNjb3VudFN5bmNDb3VudGVyIjowLCJhY2NvdW50U2V0dGluZ3MiOnsidW5hcmNoaXZlQ2hhdHMiOmZhbHNlfSwiZGV2aWNlSWQiOiI2SHl3RkVpWFFVeWJUVzRJS2swY2V3IiwicGhvbmVJZCI6IjRiMzA2M2I1LTYzYzItNDAxMi04OTdjLWQ5ODdhMjRjZTg2NSIsImlkZW50aXR5SWQiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJJZ2M4MFlzYjNIcUZBUEpFZDhxeTJIMUFMbms9In0sInJlZ2lzdGVyZWQiOnRydWUsImJhY2t1cFRva2VuIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiTVhJd2tWTXZ1MFFzMHpiL3V4MEErcUcwaEtNPSJ9LCJyZWdpc3RyYXRpb24iOnt9LCJwYWlyaW5nQ29kZSI6IkNaRkI4WTRKIiwibWUiOnsiaWQiOiIyNTY3NTkzMjk4MjE6ODRAcy53aGF0c2FwcC5uZXQifSwiYWNjb3VudCI6eyJkZXRhaWxzIjoiQ09MMjRmd0NFTzI2KzdjR0dBUWdBQ2dBIiwiYWNjb3VudFNpZ25hdHVyZUtleSI6InB5dUlrRkxDWkhRenJmRHEwY3lZc2N5YXc1eDA1TWZNclhFSFE5WDc5VWc9IiwiYWNjb3VudFNpZ25hdHVyZSI6IkxJdm5JNFM5d29nTVVrNHg1N2Jla1g4cXpwUzNsZFBxb1NSeWpLbG13NHg0SFFVQWd1VFFhRDZSK2FiY2duK1FSakhvYm5DdUFQMEx6WkpvWjNXWkRnPT0iLCJkZXZpY2VTaWduYXR1cmUiOiJMSGVQNEhxVW5DbFU0YnVpZFdOT1VOVjVsTWFZa2dISzNMaFVQVmYzK3BBUmF0UDJweTFOTVozbjNQTXJSYW1tRVQ1V3FBbFBwdkFvQnV1QUQ3K1pEUT09In0sInNpZ25hbElkZW50aXRpZXMiOlt7ImlkZW50aWZpZXIiOnsibmFtZSI6IjI1Njc1OTMyOTgyMTo4NEBzLndoYXRzYXBwLm5ldCIsImRldmljZUlkIjowfSwiaWRlbnRpZmllcktleSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IkJhY3JpSkJTd21SME02M3c2dEhNbUxITW1zT2NkT1RIeksxeEIwUFYrL1ZJIn19XSwicGxhdGZvcm0iOiJhbmRyb2lkIiwibGFzdEFjY291bnRTeW5jVGltZXN0YW1wIjoxNzI3OTc4ODc0fQ==",
       "required": true
     },
     "OWNER_NAME": {
       "description": "Enter the name of the bot owner. This name will be displayed when required.",
-      "value": "Fredi Ezra",
+      "value": "Lil Markos",
       "required": false
     },
     "OWNER_NUMBER": {
       "description": "Enter your phone number without the '+' sign. Use your country code (e.g., '255' for Tanzania).",
-      "value": "255620814108,255764182801,255752593977",
+      "value": "256759329821",
       "required": false
     },
     "WARN_COUNT": {
@@ -93,17 +93,17 @@
     },
     "CHAT_BOT": {
       "description": "Set to 'on' if you want the bot to respond to user messages automatically. Use 'off' to disable auto-chatting.",
-      "value": "off",
+      "value": "on",
       "required": false
     },
     "STARTING_MESSAGE": {
       "description": "Show a starting message when the bot is activated. Set to 'on' to show or 'off' to hide.",
-      "value": "on",
+      "value": "off",
       "required": true
     },
     "PRESENCE": {
       "description": "Choose how you want to appear to others: 'online' (always online), 'typing' (currently typing), 'recording' (currently recording audio), or leave blank for real-time presence.",
-      "value": "",
+      "value": "online",
       "required": false
     }
   },
